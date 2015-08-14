@@ -24,5 +24,5 @@ for line in stdin:
         else:
           raise ValueError('mismatch')
   
-    oligos = re.sub( r'([atcg]{15})[atcg]{0,}([atcg]{15})', r'\1 \2', ''.join( codon ) )
+    oligos = re.sub( r'([atcg]{15})[atcg]{0,}([atcg]{15})', r'\1 \2', rc( ''.join( codon ) ) )
     print diff.lower(), oligos
