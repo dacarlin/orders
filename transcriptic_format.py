@@ -9,4 +9,5 @@ for line in sys.stdin:
   oligos = spl[1:]
 
   for index, oligo in enumerate( oligos ):
-    print '%s,T7pro,%s,%s,25nm,standard' % ( mutant, uuid.uuid4(), oligo ) 
+    if len( oligo ) > 32:
+      print '%s,T7pro,%s,%s,25nm,standard' % ( mutant, uuid.uuid4(), oligo ) 

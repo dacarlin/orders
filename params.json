@@ -1,7 +1,7 @@
 {
   "parameters":{
     "num_colonies": 3,
-    "ssDNA": "1NNU ssDNA",
+    "ssDNA": "",
     "antibiotic":"50_ugml_Kanamycin",
     "t7pro": true,
     "t7term": true,
