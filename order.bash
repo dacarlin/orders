@@ -3,6 +3,6 @@ for i in example/3orf_sandbox/*des*pdb; do
   export alex_f="${i/pdb/fasta}"
   python pdb_to_fasta.py $i > $alex_f
   blastx -query ${SCAFFOLD} -subject $alex_f -outfmt "6 qseq sseq length qstart qend" | python diff.py  
-done |  python transcriptic_format.py > kunkel_mutants.csv 
+done #|  python transcriptic_format.py > kunkel_mutants.csv 
 
-python kunkel.py params.json | transcriptic analyze 
+#python kunkel.py params.json | transcriptic analyze 
