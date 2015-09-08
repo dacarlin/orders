@@ -5,4 +5,4 @@ for i in ~/Documents/boxi/etc/3orf_sandbox/*des*pdb; do
   blastx -query ${SCAFFOLD} -subject $alex_f -outfmt "6 qseq sseq length qstart qend" | python diff.py  
 done |  python transcriptic_format.py > kunkel_mutants.csv 
 
-python kunkel_mutagenesis.py 
+python kunkel_mutagenesis.py params.json
